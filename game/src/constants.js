@@ -1,0 +1,5 @@
+export const GRID_SIZE = 20;
+export const BLOCK_SIZE = 280;
+export const ROAD_W = 70;
+export const COLORS = { grass: '#228b22', road: '#555', building: '#777' };
+export const DISTRICTS = { BEACH: 'beach', DOWNTOWN: 'downtown', SUBURBS: 'suburbs' };

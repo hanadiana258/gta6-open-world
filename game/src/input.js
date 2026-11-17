@@ -48,6 +48,6 @@ export function createInput(target) {
       const taken = actions;
       actions = 0;
       return taken;
-    },
+    }
   };
 }
