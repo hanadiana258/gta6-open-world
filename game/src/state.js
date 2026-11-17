@@ -1,3 +1,4 @@
+/* Centralized game state. */
 export const state = {
     mode: 'free',
     time: 0,

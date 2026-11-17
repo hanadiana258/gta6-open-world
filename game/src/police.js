@@ -1,9 +1,9 @@
-import { drawVehicle } from './vehicles.js';
-
+/* Solano Drive: Police unit behavior, pursuit AI, and lightbar effects. */
 export const policeSystem = {
     units: [],
-    spawn(n, x, y) {
-        for (let i = 0; i < n; i++) {
+
+    spawnUnits(count, x, y) {
+        for (let i = 0; i < count; i++) {
             this.units.push({
                 x: x - 150 - (Math.random() * 110),
                 y: y - 100 + (Math.random() * 200),
@@ -16,12 +16,13 @@ export const policeSystem = {
             });
         }
     },
+
     update(dt, player, wanted) {
         if (wanted.level < 1) {
             this.units = [];
             return;
         }
-        if (this.units.length < 3) this.spawn(3 - this.units.length, player.x, player.y);
+        if (this.units.length < 3) this.spawnUnits(3 - this.units.length, player.x, player.y);
 
         for (let unit of this.units) {
             const dx = player.x - unit.x;
@@ -31,32 +32,24 @@ export const policeSystem = {
             unit.y += Math.sin(unit.angle) * unit.speed;
         }
     },
+
     draw(ctx, cam) {
         for (let unit of this.units) {
             ctx.save();
             ctx.translate(unit.x - cam.x, unit.y - cam.y);
             ctx.rotate(unit.angle);
-
-            // Black body
             ctx.fillStyle = '#1b1b1b';
             ctx.fillRect(-19, -9, 38, 18);
-            
-            // White doors
             ctx.fillStyle = '#fff';
             ctx.fillRect(-5, -9, 10, 18);
-
-            // Roof light bar
-            const flash = (Date.now() % 500) < 250;
-            ctx.fillStyle = flash ? '#e74c3c' : '#3498db';
+            const isFlashing = (Date.now() % 500) < 250;
+            ctx.fillStyle = isFlashing ? '#e74c3c' : '#3498db';
             ctx.fillRect(-4, -6, 8, 3);
-            ctx.fillStyle = flash ? '#3498db' : '#e74c3c';
+            ctx.fillStyle = isFlashing ? '#3498db' : '#e74c3c';
             ctx.fillRect(-4, 3, 8, 3);
-
-            // Headlights
             ctx.fillStyle = '#fff9c4';
             ctx.fillRect(15, -6, 4, 4);
             ctx.fillRect(15, 2, 4, 4);
-            
             ctx.restore();
         }
     }

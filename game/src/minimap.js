@@ -1,69 +1,79 @@
-import { BLOCK_SIZE, ROAD_W } from './constants.js';
+/**
+ * @fileoverview Minimap rendering system for Solano Drive,
+ * visualizing the game world and entities.
+ */
 
-export const minimapSystem = {
-    drawMinimap(ctx, { player, city, policeSystem, missionSystem, traffic }) {
+import { BLOCK_SIZE } from './constants.js';
+
+export const MinimapManager = {
+    drawMinimap(ctx, { player, policeSystem, missionManager, traffic }) {
         const size = 180;
-        const x = 14;
-        const y = 720 - 194;
+        const xOffset = 14;
+        const yOffset = 720 - 194;
         
+        // Background and border
         ctx.fillStyle = '#101010';
-        ctx.fillRect(x, y, size, size);
+        ctx.fillRect(xOffset, yOffset, size, size);
         ctx.strokeStyle = '#fff';
         ctx.lineWidth = 2;
-        ctx.strokeRect(x, y, size, size);
+        ctx.strokeRect(xOffset, yOffset, size, size);
         
         ctx.save();
         ctx.beginPath();
-        ctx.rect(x, y, size, size);
+        ctx.rect(xOffset, yOffset, size, size);
         ctx.clip();
 
         const scale = size / 5600;
         
-        // Districts
+        // District representations
         ctx.fillStyle = 'rgba(217, 197, 138, 0.3)';
-        ctx.fillRect(x, y, 7 * BLOCK_SIZE * scale, size);
+        ctx.fillRect(xOffset, yOffset, 7 * BLOCK_SIZE * scale, size);
         ctx.fillStyle = 'rgba(128, 149, 168, 0.3)';
-        ctx.fillRect(x + 7 * BLOCK_SIZE * scale, y, 7 * BLOCK_SIZE * scale, size);
+        ctx.fillRect(xOffset + 7 * BLOCK_SIZE * scale, yOffset, 7 * BLOCK_SIZE * scale, size);
         ctx.fillStyle = 'rgba(124, 179, 66, 0.3)';
-        ctx.fillRect(x + 14 * BLOCK_SIZE * scale, y, 6 * BLOCK_SIZE * scale, size);
+        ctx.fillRect(xOffset + 14 * BLOCK_SIZE * scale, yOffset, 6 * BLOCK_SIZE * scale, size);
 
-        // Roads
+        // Road network
         ctx.strokeStyle = '#555';
         ctx.lineWidth = 3;
         for (let i = 0; i < 20; i++) {
             ctx.beginPath();
-            ctx.moveTo(x + i * BLOCK_SIZE * scale, y);
-            ctx.lineTo(x + i * BLOCK_SIZE * scale, y + size);
+            ctx.moveTo(xOffset + i * BLOCK_SIZE * scale, yOffset);
+            ctx.lineTo(xOffset + i * BLOCK_SIZE * scale, yOffset + size);
             ctx.stroke();
             ctx.beginPath();
-            ctx.moveTo(x, y + i * BLOCK_SIZE * scale);
-            ctx.lineTo(x + size, y + i * BLOCK_SIZE * scale);
+            ctx.moveTo(xOffset, yOffset + i * BLOCK_SIZE * scale);
+            ctx.lineTo(xOffset + size, yOffset + i * BLOCK_SIZE * scale);
             ctx.stroke();
         }
 
-        // Traffic
+        // Render traffic
         ctx.fillStyle = 'white';
-        traffic.forEach(v => ctx.fillRect(x + v.x * scale - 1, y + v.y * scale - 1, 2, 2));
+        traffic.forEach(vehicle => {
+            ctx.fillRect(xOffset + vehicle.x * scale - 1, yOffset + vehicle.y * scale - 1, 2, 2);
+        });
 
-        // Police
+        // Render police
         ctx.fillStyle = 'red';
-        policeSystem.units.forEach(u => ctx.fillRect(x + u.x * scale - 2, y + u.y * scale - 2, 4, 4));
+        policeSystem.units.forEach(unit => {
+            ctx.fillRect(xOffset + unit.x * scale - 2, yOffset + unit.y * scale - 2, 4, 4);
+        });
 
-        // Mission
-        if (missionSystem.active) {
-            const m = missionSystem.list[missionSystem.current];
+        // Render mission target
+        if (missionManager.active) {
+            const currentMission = missionManager.missions[missionManager.currentMissionIndex];
             ctx.fillStyle = 'yellow';
             ctx.beginPath();
-            ctx.arc(x + m.target.x * scale, y + m.target.y * scale, 5, 0, Math.PI * 2);
+            ctx.arc(xOffset + currentMission.target.x * scale, yOffset + currentMission.target.y * scale, 5, 0, Math.PI * 2);
             ctx.fill();
         }
 
-        // Player
+        // Render player
         ctx.fillStyle = 'white';
         ctx.beginPath();
-        ctx.moveTo(x + player.x * scale, y + player.y * scale - 6);
-        ctx.lineTo(x + player.x * scale - 4, y + player.y * scale + 4);
-        ctx.lineTo(x + player.x * scale + 4, y + player.y * scale + 4);
+        ctx.moveTo(xOffset + player.x * scale, yOffset + player.y * scale - 6);
+        ctx.lineTo(xOffset + player.x * scale - 4, yOffset + player.y * scale + 4);
+        ctx.lineTo(xOffset + player.x * scale + 4, yOffset + player.y * scale + 4);
         ctx.fill();
 
         ctx.restore();

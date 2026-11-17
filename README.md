@@ -1,6 +1,6 @@
 # Solano Drive
 
-Solano Drive is an original 2D top-down open-world crime game set in the sprawling city of Puerto Solano. Explore diverse districts including the beach, downtown, and suburbs. Engage in dynamic gameplay featuring traffic, pedestrians, car theft, and a high-stakes 5-star wanted system with intense police pursuits. Experience a gripping 8-mission story for Rico Vega, complete with combat, a functional HUD with minimap, synthesized WebAudio sound effects, and persistent localStorage saves.
+Solano Drive is an original 2D top-down open-world crime game set in the city of Puerto Solano, featuring beach, downtown, and suburb districts. It includes dynamic traffic, pedestrians, car theft, a 5-star wanted system with police pursuits, 8 chained story missions for Rico Vega, combat, a functional HUD with minimap, synthesized WebAudio sound, and localStorage saves.
 [![make.fun · gta6-01](https://make.fun/badge/gta6-01.svg)](https://make.fun/bounty/gta6-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
 [![rank](https://make.fun/badge/gta6-01/hanadiana258/gta6-open-world/rank.svg)](https://make.fun/bounty/gta6-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
 [![reward](https://make.fun/badge/gta6-01/hanadiana258/gta6-open-world/reward.svg)](https://make.fun/bounty/gta6-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)

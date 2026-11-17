@@ -1,7 +1,9 @@
+/* Demo shot state manager for recording/automated play. */
 export const shotsSystem = {
     handleUrlParams() {
         const params = new URLSearchParams(window.location.search);
         if (!params.has('shot')) return;
+        
         window.__solanoReady = false;
         const shot = params.get('shot');
         const t = parseFloat(params.get('t') || 0);

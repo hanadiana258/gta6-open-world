@@ -1,9 +1,14 @@
-export const missionSystem = {
+/**
+ * @fileoverview Manages the mission progression system for Solano Drive,
+ * handling state, target tracking, and visual markers.
+ */
+
+export const MissionManager = {
     active: true,
-    current: 0,
+    currentMissionIndex: 0,
     money: 0,
-    list: [
-        { id: 1, name: "The Drop", target: { x: 15*280, y: 12*280 }, reward: 100 },
+    missions: [
+        { id: 1, name: "The Drop", target: { x: 4200, y: 3360 }, reward: 100 },
         { id: 2, name: "Escort", target: { x: 3000, y: 3000 }, reward: 200 },
         { id: 3, name: "Sabotage", target: { x: 2500, y: 2800 }, reward: 300 },
         { id: 4, name: "Courier", target: { x: 2800, y: 2400 }, reward: 400 },
@@ -12,22 +17,26 @@ export const missionSystem = {
         { id: 7, name: "Extraction", target: { x: 2400, y: 2900 }, reward: 700 },
         { id: 8, name: "Final Showdown", target: { x: 2600, y: 2600 }, reward: 1000 }
     ],
-    update(dt, player) {
+
+    update(deltaTime, player) {
         if (!this.active) return;
-        const m = this.list[this.current];
-        if (Math.hypot(player.x - m.target.x, player.y - m.target.y) < 100) {
-            this.money += m.reward;
-            this.current = (this.current + 1) % this.list.length;
+        const currentMission = this.missions[this.currentMissionIndex];
+        const distanceToTarget = Math.hypot(player.x - currentMission.target.x, player.y - currentMission.target.y);
+        
+        if (distanceToTarget < 100) {
+            this.money += currentMission.reward;
+            this.currentMissionIndex = (this.currentMissionIndex + 1) % this.missions.length;
         }
     },
-    drawMarkers(ctx, cam) {
+
+    drawMarkers(ctx, camera) {
         if (!this.active) return;
-        const m = this.list[this.current];
-        const t = Date.now() / 1000;
-        const radius = 26 + 6 * Math.sin(t * 4);
+        const currentMission = this.missions[this.currentMissionIndex];
+        const time = Date.now() / 1000;
+        const radius = 26 + 6 * Math.sin(time * 4);
         
         ctx.save();
-        ctx.translate(m.target.x - cam.x, m.target.y - cam.y);
+        ctx.translate(currentMission.target.x - camera.x, currentMission.target.y - camera.y);
         
         ctx.beginPath();
         ctx.arc(0, 0, radius, 0, Math.PI * 2);

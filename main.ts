@@ -1,7 +1,8 @@
-// This entrypoint builds the "Solano Drive" game distribution. It copies the game/ and
-// screenshots/ directories to the output directory and generates a dossier.json file
-// using the vendored buildDossier library. It enforces caps: 163840 text bytes,
-// max 4 screenshots at 256 KiB each, and max 993 game files totaling 48 MiB.
+// This program builds the "Solano Drive" game distribution by copying
+// game/ and screenshots/ directories to the output directory and generating 
+// a dossier.json file using the vendored buildDossier library. It enforces 
+// caps: 163840 text bytes, 4 screenshots at 256 KiB each, and 993 game files 
+// totaling up to 48 MiB.
 
 import { cpSync, existsSync, mkdirSync, writeFileSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
@@ -16,10 +17,6 @@ cpSync(join(here, 'game'), join(out, 'game'), { recursive: true });
 mkdirSync(join(out, 'screenshots'), { recursive: true });
 if (existsSync(join(here, 'screenshots'))) cpSync(join(here, 'screenshots'), join(out, 'screenshots'), { recursive: true });
 
-// The scorer's own caps (reference/gate.json): only text_max_bytes shapes the bytes; the others refuse an entry the
-// scorer would refuse (more than 4 screenshots or one over 256 KiB; more than 993 files in game/ or 48 MiB of game
-// files, in all, or a path under game/ over 1000 bytes: game/ counts beside /output's own 1000-entry cap, its
-// screenshots/ and dossier.json).
 writeFileSync(
   join(out, 'dossier.json'),
   buildDossier(out, {
@@ -31,7 +28,6 @@ writeFileSync(
   }),
 );
 
-const dossierPath = join(out, 'dossier.json');
-const dossier = JSON.parse(readFileSync(dossierPath, 'utf8'));
-const imagesCount = dossier.screenshots ? dossier.screenshots.length : 0;
-console.log(`Dossier created: ${dossierPath}, ${statSync(dossierPath).size} bytes, ${imagesCount} images.`);
+const dp = join(out, 'dossier.json');
+const d = JSON.parse(readFileSync(dp, 'utf8'));
+console.log(`Dossier: ${dp}, ${statSync(dp).size} bytes, ${d.screenshots?.length ?? 0} images.`);
