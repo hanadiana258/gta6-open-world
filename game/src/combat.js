@@ -1,5 +1,5 @@
-// rebuilt r8 — authored in this session
 /* Solano Drive: Combat mechanics, projectiles, and cooldowns. */
+// PERTURB
 export const combatSystem = {
     bullets: [],
     lastShotTimestamp: 0,

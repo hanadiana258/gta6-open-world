@@ -1,5 +1,5 @@
-// rebuilt r8 — authored in this session
 /* Centralized game state. */
+// PERTURB
 export const state = {
     mode: 'free',
     time: 0,

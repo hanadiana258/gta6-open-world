@@ -1,5 +1,5 @@
-// rebuilt r8 — authored in this session
 /* Handles input and browser events. */
+// PERTURB
 export const ACTION_CONFIRM = 1;
 export const ACTION_PAUSE = 2;
 

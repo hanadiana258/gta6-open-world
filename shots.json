@@ -4,3 +4,4 @@
   { "name": "3-chase.jpg", "query": "?shot=chase" },
   { "name": "4-mission.jpg", "query": "?shot=mission" }
 ]
+_perturb: true

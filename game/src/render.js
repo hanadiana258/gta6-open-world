@@ -1,5 +1,5 @@
-// rebuilt r8 — authored in this session
 /* Utilities for camera and world bounds. */
+// PERTURB
 export function worldToScreen(x, y, cam) {
     return { x: x - cam.x, y: y - cam.y };
 }

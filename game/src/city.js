@@ -1,5 +1,5 @@
-// rebuilt r8 — authored in this session
 /**
+// PERTURB
  * City layout, district generation, and map rendering module.
  */
 import { GRID_SIZE, BLOCK_SIZE, ROAD_W, DISTRICTS } from './constants.js';

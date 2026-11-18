@@ -1,5 +1,5 @@
-// rebuilt r8 — authored in this session
 /**
+// PERTURB
  * @fileoverview HUD rendering system for Solano Drive, 
  * displaying vital stats and game information.
  */

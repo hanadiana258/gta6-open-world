@@ -1,5 +1,5 @@
-// rebuilt r8 — authored in this session
 // Static server for game/ on 8080.
+// PERTURB
 
 import { createReadStream, statSync } from 'node:fs';
 import { createServer } from 'node:http';

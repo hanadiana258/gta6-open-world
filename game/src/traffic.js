@@ -1,5 +1,5 @@
-// rebuilt r8 — authored in this session
 /**
+// PERTURB
  * Traffic simulation: lane-following NPCs and camera-based spawning.
  */
 import { drawVehicle, Vehicle } from './vehicles.js';

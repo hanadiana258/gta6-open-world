@@ -1,5 +1,5 @@
-// rebuilt r8 — authored in this session
 /**
+// PERTURB
  * @fileoverview Manages the mission progression system for Solano Drive,
  * handling state, target tracking, and visual markers.
  */

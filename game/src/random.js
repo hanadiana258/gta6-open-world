@@ -1,5 +1,5 @@
-// rebuilt r8 — authored in this session
 /* Seeded random number generator (mulberry32). */
+// PERTURB
 export function createRandom(seed) {
     let a = seed | 0;
     return function random() {

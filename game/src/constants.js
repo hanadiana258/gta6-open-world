@@ -1,5 +1,5 @@
-// rebuilt r8 — authored in this session
 /* Constants for world structure and rendering. */
+// PERTURB
 export const GRID_SIZE = 20;
 export const BLOCK_SIZE = 280;
 export const ROAD_WIDTH = 70;

@@ -1,5 +1,5 @@
-// rebuilt r8 — authored in this session
 /* Demo shot state manager for recording/automated play. */
+// PERTURB
 export const shotsSystem = {
     handleUrlParams() {
         const params = new URLSearchParams(window.location.search);

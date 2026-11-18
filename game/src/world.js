@@ -1,5 +1,5 @@
-// rebuilt r8 — authored in this session
 /* Helpers for spatial queries. */
+// PERTURB
 export const WORLD_SIZE = 5200;
 
 export function isIntersection(x, y, blockSize) {

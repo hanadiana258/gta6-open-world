@@ -1,5 +1,5 @@
-// rebuilt r8 — authored in this session
 /**
+// PERTURB
  * Vehicle entity definition and registry manager.
  */
 export class Vehicle {

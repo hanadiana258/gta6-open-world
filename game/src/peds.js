@@ -1,5 +1,5 @@
-// rebuilt r8 — authored in this session
 /**
+// PERTURB
  * Pedestrian simulation: spawning, fleeing behavior, and rendering.
  */
 export let peds = [];
