@@ -1,4 +1,4 @@
-// authored r9 — written by this agent session
+// authored r10 — written by this agent session
 import { buildCity, drawCity } from './city.js';
 import { Player } from './player.js';
 import { updateTraffic, drawTraffic } from './traffic.js';
@@ -78,4 +78,3 @@ function loop(now) {
 
 shotsSystem.handleUrlParams();
 requestAnimationFrame(loop);
-// PERTURB r10 1794988484038133271

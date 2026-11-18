@@ -1,4 +1,4 @@
-// authored r9 — written by this agent session
+// authored r10 — written by this agent session
 /* Solano Drive: Police unit behavior, pursuit AI, and lightbar effects. */
 export const policeSystem = {
     units: [],
@@ -55,4 +55,3 @@ export const policeSystem = {
         }
     }
 };
-// PERTURB r10 1794988484068423999

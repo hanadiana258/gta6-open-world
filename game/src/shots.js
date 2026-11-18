@@ -1,4 +1,4 @@
-// authored r9 — written by this agent session
+// authored r10 — written by this agent session
 /* Demo shot state manager for recording/automated play. */
 export const shotsSystem = {
     handleUrlParams() {
@@ -36,4 +36,3 @@ export const shotsSystem = {
         }, t * 1000);
     }
 };
-// PERTURB r10 1794988484102763344

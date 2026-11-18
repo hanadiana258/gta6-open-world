@@ -1,4 +1,4 @@
-// authored r9 — written by this agent session
+// authored r10 — written by this agent session
 /* Solano Drive: Combat mechanics, projectiles, and cooldowns. */
 export const combatSystem = {
     bullets: [],
@@ -36,4 +36,3 @@ export const combatSystem = {
         }
     }
 };
-// PERTURB r10 1794988484012912230

@@ -1,5 +1,5 @@
+// authored r10 — written by this agent session
 /* Handles input and browser events. */
-// PERTURB
 export const ACTION_CONFIRM = 1;
 export const ACTION_PAUSE = 2;
 
@@ -47,4 +47,3 @@ export function createInput(target) {
         }
     };
 }
-// PERTURB r10 1794988484027583112

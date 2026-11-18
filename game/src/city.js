@@ -1,5 +1,5 @@
+// authored r10 — written by this agent session
 /**
-// PERTURB
  * City layout, district generation, and map rendering module.
  */
 import { GRID_SIZE, BLOCK_SIZE, ROAD_W, DISTRICTS } from './constants.js';
@@ -156,4 +156,3 @@ export function drawCity(ctx, cam, city) {
     drawWater();
     ctx.restore();
 }
-// PERTURB r10 1794988484010366366

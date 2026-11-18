@@ -1,5 +1,5 @@
+// authored r10 — written by this agent session
 /**
-// PERTURB
  * Traffic simulation: lane-following NPCs and camera-based spawning.
  */
 import { drawVehicle, Vehicle } from './vehicles.js';
@@ -45,4 +45,3 @@ export function updateTraffic(dt, player) {
 export function drawTraffic(ctx, cam) {
     activeTraffic.forEach(v => drawVehicle(ctx, v, cam));
 }
-// PERTURB r10 1794988484111383225

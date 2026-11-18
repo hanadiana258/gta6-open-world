@@ -1,3 +1,4 @@
+// authored r10 — written by this agent session
 // This tool builds the "Solano Drive" screenshots by spawning a headless browser.
 // It serves the game locally, navigates to specific shots, waits for __solanoReady,
 // and captures 1280x720 JPEG screenshots.
@@ -98,4 +99,3 @@ server.listen(0, '127.0.0.1', async () => {
         }
     };
 });
-// PERTURB r10 1794988484134730260

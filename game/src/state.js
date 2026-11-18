@@ -1,5 +1,5 @@
+// authored r10 — written by this agent session
 /* Centralized game state. */
-// PERTURB
 export const state = {
     mode: 'free',
     time: 0,
@@ -7,4 +7,3 @@ export const state = {
     missionIndex: 0,
     money: 0
 };
-// PERTURB r10 1794988484105369511

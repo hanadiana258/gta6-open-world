@@ -1,4 +1,4 @@
-// authored r9 — written by this agent session
+// authored r10 — written by this agent session
 export const effectsSystem = {
     skids: [],
     exhaust: [],
@@ -32,4 +32,3 @@ export const effectsSystem = {
         });
     }
 };
-// PERTURB r10 1794988484021349788

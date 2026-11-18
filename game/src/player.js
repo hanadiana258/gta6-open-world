@@ -1,5 +1,5 @@
+// authored r10 — written by this agent session
 /* Solano Drive: Player movement, vehicle handling, and character rendering. */
-// PERTURB
 export class Player {
     constructor() {
         this.x = 14 * 280 + 35;
@@ -62,4 +62,3 @@ export class Player {
         ctx.restore();
     }
 }
-// PERTURB r10 1794988484063413243

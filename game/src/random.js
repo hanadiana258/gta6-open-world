@@ -1,5 +1,5 @@
+// authored r10 — written by this agent session
 /* Seeded random number generator (mulberry32). */
-// PERTURB
 export function createRandom(seed) {
     let a = seed | 0;
     return function random() {
@@ -9,4 +9,3 @@ export function createRandom(seed) {
         return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
     };
 }
-// PERTURB r10 1794988484078145719

@@ -1,5 +1,5 @@
+// authored r10 — written by this agent session
 /* Helpers for spatial queries. */
-// PERTURB
 export const WORLD_SIZE = 5200;
 
 export function isIntersection(x, y, blockSize) {
@@ -12,4 +12,3 @@ export function nearestRoadPoint(x, y, blockSize) {
         y: Math.round(y / blockSize) * blockSize
     };
 }
-// PERTURB r10 1794988484126993631
