@@ -1,4 +1,4 @@
-// rebuilt r5 — authored by this session
+// rebuilt r8 — authored in this session
 /* Helpers for spatial queries. */
 export const WORLD_SIZE = 5200;
 

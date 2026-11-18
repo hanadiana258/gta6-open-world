@@ -1,4 +1,4 @@
-// rebuilt r5 — authored by this session
+// rebuilt r8 — authored in this session
 /* Centralized game state. */
 export const state = {
     mode: 'free',

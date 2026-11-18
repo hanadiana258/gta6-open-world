@@ -1,4 +1,4 @@
-// rebuilt r5 — authored by this session
+// rebuilt r8 — authored in this session
 /* Constants for world structure and rendering. */
 export const GRID_SIZE = 20;
 export const BLOCK_SIZE = 280;

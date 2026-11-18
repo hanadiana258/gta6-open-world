@@ -1,4 +1,4 @@
-// rebuilt r5 — authored by this session
+// rebuilt r8 — authored in this session
 /**
  * @fileoverview Manages the mission progression system for Solano Drive,
  * handling state, target tracking, and visual markers.

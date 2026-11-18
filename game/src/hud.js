@@ -1,4 +1,4 @@
-// rebuilt r5 — authored by this session
+// rebuilt r8 — authored in this session
 /**
  * @fileoverview HUD rendering system for Solano Drive, 
  * displaying vital stats and game information.

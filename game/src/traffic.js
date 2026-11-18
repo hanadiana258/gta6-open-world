@@ -1,4 +1,4 @@
-// rebuilt r5 — authored by this session
+// rebuilt r8 — authored in this session
 /**
  * Traffic simulation: lane-following NPCs and camera-based spawning.
  */

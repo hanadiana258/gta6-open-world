@@ -1,4 +1,4 @@
-// rebuilt r5 — authored by this session
+// rebuilt r8 — authored in this session
 /**
  * @fileoverview Minimap rendering system for Solano Drive,
  * visualizing the game world and entities.

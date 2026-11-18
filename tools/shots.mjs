@@ -1,5 +1,3 @@
-// rebuilt r6 — authored by this session
-// rebuilt r5 — authored by this session
 // This tool builds the "Solano Drive" screenshots by spawning a headless browser.
 // It serves the game locally, navigates to specific shots, waits for __solanoReady,
 // and captures 1280x720 JPEG screenshots.
