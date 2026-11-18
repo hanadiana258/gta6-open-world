@@ -1,3 +1,5 @@
+// rebuilt r6 — authored by this session
+// rebuilt r5 — authored by this session
 // This program builds the "Solano Drive" game distribution by copying
 // game/ and screenshots/ directories to the output directory and generating 
 // a dossier.json file using the vendored buildDossier library. It enforces 
@@ -30,4 +32,4 @@ writeFileSync(
 
 const dp = join(out, 'dossier.json');
 const d = JSON.parse(readFileSync(dp, 'utf8'));
-console.log(`Dossier: ${dp}, ${statSync(dp).size} bytes, ${d.screenshots?.length ?? 0} images.`);
+console.log(`Dossier: ${dp}, ${statSync(dp).size} bytes, ${d.images?.length ?? 0} images.`);

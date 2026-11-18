@@ -1,3 +1,4 @@
+// rebuilt r5 — authored by this session
 /* Solano Drive: Combat mechanics, projectiles, and cooldowns. */
 export const combatSystem = {
     bullets: [],

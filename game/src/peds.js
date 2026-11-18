@@ -1,3 +1,4 @@
+// rebuilt r5 — authored by this session
 /**
  * Pedestrian simulation: spawning, fleeing behavior, and rendering.
  */

@@ -1,3 +1,4 @@
+// rebuilt r5 — authored by this session
 /**
  * City layout, district generation, and map rendering module.
  */

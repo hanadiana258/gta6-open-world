@@ -1,3 +1,4 @@
+// rebuilt r5 — authored by this session
 /* Solano Drive: Police unit behavior, pursuit AI, and lightbar effects. */
 export const policeSystem = {
     units: [],

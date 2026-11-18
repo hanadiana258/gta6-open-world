@@ -1,10 +1,11 @@
+// rebuilt r5 — authored by this session
 /**
  * @fileoverview HUD rendering system for Solano Drive, 
  * displaying vital stats and game information.
  */
 
 export const HudManager = {
-    drawHUD(ctx, { player, wantedSystem, missionManager }) {
+    drawHUD(ctx, { player, wantedSystem, missionSystem: missionManager }) {
         const health = player.health;
         const money = 15000;
         const wantedLevel = wantedSystem.level || 0;
@@ -53,3 +54,5 @@ export const HudManager = {
         }
     }
 };
+
+export const hudSystem = HudManager;

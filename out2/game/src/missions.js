@@ -1,3 +1,4 @@
+// rebuilt r5 — authored by this session
 /**
  * @fileoverview Manages the mission progression system for Solano Drive,
  * handling state, target tracking, and visual markers.
@@ -52,3 +53,5 @@ export const MissionManager = {
         ctx.restore();
     }
 };
+
+export const missionSystem = MissionManager;

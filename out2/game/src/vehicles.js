@@ -1,3 +1,4 @@
+// rebuilt r5 — authored by this session
 /**
  * Vehicle entity definition and registry manager.
  */

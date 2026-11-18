@@ -1,3 +1,4 @@
+// rebuilt r5 — authored by this session
 /* Centralized game state. */
 export const state = {
     mode: 'free',

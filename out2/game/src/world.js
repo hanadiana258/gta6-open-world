@@ -1,3 +1,4 @@
+// rebuilt r5 — authored by this session
 /* Helpers for spatial queries. */
 export const WORLD_SIZE = 5200;
 

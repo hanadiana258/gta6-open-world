@@ -1,3 +1,4 @@
+// rebuilt r5 — authored by this session
 /**
  * @fileoverview Minimap rendering system for Solano Drive,
  * visualizing the game world and entities.
@@ -6,7 +7,7 @@
 import { BLOCK_SIZE } from './constants.js';
 
 export const MinimapManager = {
-    drawMinimap(ctx, { player, policeSystem, missionManager, traffic }) {
+    drawMinimap(ctx, { player, policeSystem, missionSystem: missionManager, traffic }) {
         const size = 180;
         const xOffset = 14;
         const yOffset = 720 - 194;
@@ -79,3 +80,5 @@ export const MinimapManager = {
         ctx.restore();
     }
 };
+
+export const minimapSystem = MinimapManager;

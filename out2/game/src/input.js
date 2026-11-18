@@ -1,3 +1,4 @@
+// rebuilt r5 — authored by this session
 /* Handles input and browser events. */
 export const ACTION_CONFIRM = 1;
 export const ACTION_PAUSE = 2;

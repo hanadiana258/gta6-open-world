@@ -1,3 +1,4 @@
+// rebuilt r5 — authored by this session
 import { buildCity, drawCity } from './city.js';
 import { Player } from './player.js';
 import { updateTraffic, drawTraffic } from './traffic.js';

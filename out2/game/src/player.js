@@ -1,3 +1,4 @@
+// rebuilt r5 — authored by this session
 /* Solano Drive: Player movement, vehicle handling, and character rendering. */
 export class Player {
     constructor() {

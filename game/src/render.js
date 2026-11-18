@@ -1,3 +1,4 @@
+// rebuilt r5 — authored by this session
 /* Utilities for camera and world bounds. */
 export function worldToScreen(x, y, cam) {
     return { x: x - cam.x, y: y - cam.y };

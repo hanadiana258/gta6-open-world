@@ -1,3 +1,4 @@
+// rebuilt r5 — authored by this session
 /* Demo shot state manager for recording/automated play. */
 export const shotsSystem = {
     handleUrlParams() {
@@ -22,7 +23,7 @@ export const shotsSystem = {
             window.player.inVehicle = { type: 'sports', color: 'red', x: window.player.x, y: window.player.y, angle: 0, speed: 0, width: 38, height: 18 };
             window.wantedSystem.level = 3;
             window.wantedSystem.frozen = true;
-            window.policeSystem.spawn(3, window.player.x - 200, window.player.y - 200);
+            window.policeSystem.spawnUnits(3, window.player.x - 200, window.player.y - 200);
         } else if (shot === 'mission') {
             window.missionSystem.active = true;
             window.player.x = 14 * 280 + 35;
