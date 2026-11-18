@@ -33,3 +33,4 @@ writeFileSync(
 const dp = join(out, 'dossier.json');
 const d = JSON.parse(readFileSync(dp, 'utf8'));
 console.log(`Solano Drive build: dossier ${dp} (${statSync(dp).size} bytes, ${d.images?.length ?? 0} images.`);
+// PERTURB r11 1794991934896239384
