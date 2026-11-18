@@ -1,4 +1,4 @@
-// authored r11 — written by this agent session
+// authored r12 — written by this agent session
 /* Solano Drive: Wanted level tracking, crimes, and decay. */
 export const wantedSystem = {
     level: 0,

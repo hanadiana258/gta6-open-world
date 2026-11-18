@@ -1,4 +1,4 @@
-// authored r11 — written by this agent session
+// authored r12 — written by this agent session
 /**
  * @fileoverview Manages the mission progression system for Solano Drive,
  * handling state, target tracking, and visual markers.

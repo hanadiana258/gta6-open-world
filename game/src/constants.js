@@ -1,4 +1,4 @@
-// authored r11 — written by this agent session
+// authored r12 — written by this agent session
 /* Constants for world structure and rendering. */
 export const GRID_SIZE = 20;
 export const BLOCK_SIZE = 280;

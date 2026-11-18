@@ -1,4 +1,4 @@
-// authored r11 — written by this agent session
+// authored r12 — written by this agent session
 /**
  * Pedestrian simulation: spawning, fleeing behavior, and rendering.
  */

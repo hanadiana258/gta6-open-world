@@ -1,4 +1,4 @@
-// authored r11 — written by this agent session
+// authored r12 — written by this agent session
 /* Utilities for camera and world bounds. */
 export function worldToScreen(x, y, cam) {
     return { x: x - cam.x, y: y - cam.y };

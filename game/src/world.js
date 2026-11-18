@@ -1,4 +1,4 @@
-// authored r11 — written by this agent session
+// authored r12 — written by this agent session
 /* Helpers for spatial queries. */
 export const WORLD_SIZE = 5200;
 

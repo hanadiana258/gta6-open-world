@@ -1,4 +1,4 @@
-// authored r11 — written by this agent session
+// authored r12 — written by this agent session
 /* Demo shot state manager for recording/automated play. */
 export const shotsSystem = {
     handleUrlParams() {

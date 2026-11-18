@@ -1,4 +1,4 @@
-// authored r11 — written by this agent session
+// authored r12 — written by this agent session
 /**
  * Traffic simulation: lane-following NPCs and camera-based spawning.
  */
