@@ -1,4 +1,4 @@
-// authored r11 — written by this agent session
+// authored r11 (revised) — written by this agent session
 // cap: the output dir holds game/, screenshots/ and dossier.json, all inside the scorer caps
 // This program builds the "Solano Drive" game distribution by copying
 // game/ and screenshots/ directories to the output directory and generating 
