@@ -8,3 +8,4 @@ export function clampCamera(cam, worldBounds) {
     cam.x = Math.max(0, Math.min(cam.x, worldBounds));
     cam.y = Math.max(0, Math.min(cam.y, worldBounds));
 }
+// PERTURB r10 1794988484081353504
