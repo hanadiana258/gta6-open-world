@@ -15,4 +15,3 @@ Run `node serve.ts` then open http://localhost:8080
 `mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts`
 
 MIT licensed. See [make.fun](https://make.fun/bounty/gta6-01).
-<!-- PERTURB-r9 -->

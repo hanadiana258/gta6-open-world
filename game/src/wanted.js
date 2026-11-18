@@ -1,5 +1,5 @@
+// authored r9 — written by this agent session
 /* Solano Drive: Wanted level tracking, crimes, and decay. */
-// PERTURB
 export const wantedSystem = {
     level: 0,
     isFrozen: false,

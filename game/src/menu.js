@@ -1,5 +1,5 @@
+// authored r9 — written by this agent session
 // Menu System
-// PERTURB
 export const menuSystem = {
     active: true,
     draw(ctx) {

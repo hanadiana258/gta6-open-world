@@ -1,7 +1,11 @@
 {
- "type": "module",
- "dependencies": {
-  "ws": "^8.23.0"
- },
- "_perturb": "r9"
+  "name": "solano-drive",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "serve": "node serve.ts"
+  },
+  "dependencies": {
+    "ws": "^8.23.0"
+  }
 }

@@ -1,5 +1,5 @@
+// authored r9 — written by this agent session
 /**
-// PERTURB
  * Vehicle entity definition and registry manager.
  */
 export class Vehicle {

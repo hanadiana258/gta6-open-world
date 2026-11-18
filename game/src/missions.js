@@ -1,5 +1,5 @@
+// authored r9 — written by this agent session
 /**
-// PERTURB
  * @fileoverview Manages the mission progression system for Solano Drive,
  * handling state, target tracking, and visual markers.
  */

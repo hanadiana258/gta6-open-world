@@ -1,5 +1,5 @@
+// authored r9 — written by this agent session
 /* Solano Drive: Combat mechanics, projectiles, and cooldowns. */
-// PERTURB
 export const combatSystem = {
     bullets: [],
     lastShotTimestamp: 0,

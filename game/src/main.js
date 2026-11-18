@@ -1,5 +1,5 @@
+// authored r9 — written by this agent session
 import { buildCity, drawCity } from './city.js';
-// PERTURB
 import { Player } from './player.js';
 import { updateTraffic, drawTraffic } from './traffic.js';
 import { updatePeds, drawPeds } from './peds.js';

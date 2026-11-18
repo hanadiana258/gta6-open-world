@@ -1,5 +1,5 @@
+// authored r9 — written by this agent session
 export const effectsSystem = {
-// PERTURB
     skids: [],
     exhaust: [],
     addSkid(x, y) {

@@ -1,5 +1,5 @@
+// authored r9 — written by this agent session
 // Static server for game/ on 8080.
-// PERTURB
 
 import { createReadStream, statSync } from 'node:fs';
 import { createServer } from 'node:http';

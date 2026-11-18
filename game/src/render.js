@@ -1,5 +1,5 @@
+// authored r9 — written by this agent session
 /* Utilities for camera and world bounds. */
-// PERTURB
 export function worldToScreen(x, y, cam) {
     return { x: x - cam.x, y: y - cam.y };
 }

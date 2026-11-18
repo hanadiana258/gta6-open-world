@@ -1,5 +1,5 @@
+// authored r9 — written by this agent session
 /* Demo shot state manager for recording/automated play. */
-// PERTURB
 export const shotsSystem = {
     handleUrlParams() {
         const params = new URLSearchParams(window.location.search);

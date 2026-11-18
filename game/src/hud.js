@@ -1,5 +1,5 @@
+// authored r9 — written by this agent session
 /**
-// PERTURB
  * @fileoverview HUD rendering system for Solano Drive, 
  * displaying vital stats and game information.
  */

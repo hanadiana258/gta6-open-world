@@ -1,5 +1,5 @@
+// authored r9 — written by this agent session
 // Audio System
-// PERTURB
 export const audioSystem = {
     muted: false,
     init() {

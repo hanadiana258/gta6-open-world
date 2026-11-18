@@ -1,5 +1,5 @@
+// authored r9 — written by this agent session
 /**
-// PERTURB
  * @fileoverview Minimap rendering system for Solano Drive,
  * visualizing the game world and entities.
  */

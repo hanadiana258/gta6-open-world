@@ -1,5 +1,5 @@
+// authored r9 — written by this agent session
 // cap: the output dir holds game/, screenshots/ and dossier.json within the scorer caps
-// PERTURB
 // This program builds the "Solano Drive" game distribution by copying
 // game/ and screenshots/ directories to the output directory and generating 
 // a dossier.json file using the vendored buildDossier library. It enforces 
