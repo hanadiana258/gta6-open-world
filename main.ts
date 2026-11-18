@@ -1,5 +1,5 @@
-// authored r10 — written by this agent session
-// cap: the output dir holds game/, screenshots/ and dossier.json within the scorer caps
+// authored r11 — written by this agent session
+// cap: the output dir holds game/, screenshots/ and dossier.json, all inside the scorer caps
 // This program builds the "Solano Drive" game distribution by copying
 // game/ and screenshots/ directories to the output directory and generating 
 // a dossier.json file using the vendored buildDossier library. It enforces 
@@ -33,4 +33,3 @@ writeFileSync(
 const dp = join(out, 'dossier.json');
 const d = JSON.parse(readFileSync(dp, 'utf8'));
 console.log(`Solano Drive build: dossier ${dp} (${statSync(dp).size} bytes, ${d.images?.length ?? 0} images.`);
-// PERTURB r11 1794991934896239384

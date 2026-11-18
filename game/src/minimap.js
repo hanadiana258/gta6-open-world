@@ -1,4 +1,4 @@
-// authored r10 — written by this agent session
+// authored r11 — written by this agent session
 /**
  * @fileoverview Minimap rendering system for Solano Drive,
  * visualizing the game world and entities.
@@ -82,4 +82,3 @@ export const MinimapManager = {
 };
 
 export const minimapSystem = MinimapManager;
-// PERTURB r11 1794991934827830224

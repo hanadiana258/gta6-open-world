@@ -1,4 +1,4 @@
-// authored r10 — written by this agent session
+// authored r11 — written by this agent session
 /* Seeded random number generator (mulberry32). */
 export function createRandom(seed) {
     let a = seed | 0;
@@ -9,4 +9,3 @@ export function createRandom(seed) {
         return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
     };
 }
-// PERTURB r11 1794991934845332229

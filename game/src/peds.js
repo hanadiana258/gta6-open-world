@@ -1,4 +1,4 @@
-// authored r10 — written by this agent session
+// authored r11 — written by this agent session
 /**
  * Pedestrian simulation: spawning, fleeing behavior, and rendering.
  */
@@ -44,4 +44,3 @@ export function drawPeds(ctx, cam) {
         ctx.fill();
     });
 }
-// PERTURB r11 1794991934833861869

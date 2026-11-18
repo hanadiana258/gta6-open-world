@@ -1,4 +1,4 @@
-// authored r10 — written by this agent session
+// authored r11 — written by this agent session
 /**
  * Vehicle entity definition and registry manager.
  */
@@ -76,4 +76,3 @@ export function drawVehicles(ctx, cam) {
 }
 
 export function updateVehicles(dt) {}
-// PERTURB r11 1794991934863730898

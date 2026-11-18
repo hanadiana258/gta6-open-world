@@ -1,4 +1,4 @@
-// authored r10 — written by this agent session
+// authored r11 — written by this agent session
 /**
  * City layout, district generation, and map rendering module.
  */
@@ -156,4 +156,3 @@ export function drawCity(ctx, cam, city) {
     drawWater();
     ctx.restore();
 }
-// PERTURB r11 1794991934758646225

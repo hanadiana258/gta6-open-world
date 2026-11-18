@@ -1,4 +1,4 @@
-// authored r10 — written by this agent session
+// authored r11 — written by this agent session
 /**
  * Traffic simulation: lane-following NPCs and camera-based spawning.
  */
@@ -45,4 +45,3 @@ export function updateTraffic(dt, player) {
 export function drawTraffic(ctx, cam) {
     activeTraffic.forEach(v => drawVehicle(ctx, v, cam));
 }
-// PERTURB r11 1794991934859576519
