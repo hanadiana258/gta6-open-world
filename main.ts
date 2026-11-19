@@ -1,3 +1,4 @@
+// Solano Drive r13 dossier build
 // cap: output holds game/, screenshots/ and dossier.json, every one inside the scorer caps
 // This program builds the "Solano Drive" game distribution by copying
 // game/ and screenshots/ directories to the output directory and generating 
